@@ -1,1 +1,1 @@
-docker build ./docker_ws -t vicon_bridge2:c3lab
+docker build . -t vicon_bridge2:c3lab -f ./docker_ws/Dockerfile
