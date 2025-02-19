@@ -1,4 +1,4 @@
-docker run -it --network host --privileged --restart \
+docker run -it --network host --ipc host --privileged --restart always \
     -e VICON_IP=192.168.1.2 \
-    always vicon_bridge2:c3lab \
-    bash -c "ros2 launch vicon_bridge2 vicon.launch.py"
+    --name vicon_bridge2 \
+    vicon_bridge2:c3lab bash -i -c "ros2 launch vicon_bridge2 vicon.launch.py" 

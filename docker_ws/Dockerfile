@@ -33,5 +33,3 @@ RUN . /opt/ros/humble/setup.bash && colcon build
 RUN echo "source /home/vicon-ws/install/setup.bash" >> ~/.bashrc
 
 RUN pip3 install scipy numpy
-# Set the entry point
-# ENTRYPOINT ["/bin/bash", "ros2 launch vicon_bridge2 vicon.launch.py"]

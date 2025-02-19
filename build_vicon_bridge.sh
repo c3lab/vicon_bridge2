@@ -1,0 +1,1 @@
+docker build ./docker_ws -t vicon_bridge2:c3lab
