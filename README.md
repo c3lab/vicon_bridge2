@@ -6,6 +6,7 @@ This repository is the combinition of the two [vicon_bridge](https://github.com/
 
 ## Instructions
 
+### building and launching
 Follow these instructions to build and start the container. The container will automatically start at boot (see --restart flag docs on docker).
 
 ```
@@ -17,3 +18,7 @@ chmod +x run_vicon_bridge.sh
 ./run_vicon_bridge.sh
 ```
 you can close the terminal as this docker container is started with ```--restart``` flag
+
+### using data
+
+Published data are simple geometry messages, so any ros2 instance is able to echo all generated topics (tested on ros2 humble)
